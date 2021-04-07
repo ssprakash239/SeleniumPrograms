@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="75" started-at="2021-02-17T12:30:17 IST" finished-at="2021-02-17T12:30:18 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="75" started-at="2021-02-17T12:30:17 IST" finished-at="2021-02-17T12:30:18 IST">
+      <class name="com.Tests.Dependency">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:com.Tests.Dependency@1c3a4799]" name="OpenBrowser" duration-ms="11" started-at="2021-02-17T12:30:17 IST" finished-at="2021-02-17T12:30:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method status="PASS" signature="SignIn()[pri:0, instance:com.Tests.Dependency@1c3a4799]" name="SignIn" duration-ms="3" started-at="2021-02-17T12:30:17 IST" depends-on-methods="com.Tests.Dependency.OpenBrowser" finished-at="2021-02-17T12:30:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignIn -->
+        <test-method status="PASS" signature="LogOut()[pri:0, instance:com.Tests.Dependency@1c3a4799]" name="LogOut" duration-ms="2" started-at="2021-02-17T12:30:17 IST" depends-on-methods="com.Tests.Dependency.SignIn" finished-at="2021-02-17T12:30:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOut -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.Tests.Dependency@1c3a4799]" name="CloseBrowser" duration-ms="2" started-at="2021-02-17T12:30:17 IST" depends-on-methods="com.Tests.Dependency.LogOut" finished-at="2021-02-17T12:30:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- com.Tests.Dependency -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
